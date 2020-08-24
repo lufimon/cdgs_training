@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditActivity">
+
+    <EditText
+        android:id="@+id/edtEditActivityFirstName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/first_name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edtEditActivityUserId"
+        app:layout_constraintStart_toStartOf="@+id/edtEditActivityUserId"
+        app:layout_constraintTop_toBottomOf="@+id/edtEditActivityUserId" />
+
+    <EditText
+        android:id="@+id/edtEditActivityLastName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/last_name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edtEditActivityFirstName"
+        app:layout_constraintStart_toStartOf="@+id/edtEditActivityFirstName"
+        app:layout_constraintTop_toBottomOf="@+id/edtEditActivityFirstName" />
+
+    <EditText
+        android:id="@+id/edtEditActivityAge"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/hint_age"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edtEditActivityLastName"
+        app:layout_constraintStart_toStartOf="@+id/edtEditActivityLastName"
+        app:layout_constraintTop_toBottomOf="@+id/edtEditActivityLastName" />
+
+    <EditText
+        android:id="@+id/edtEditActivityFacebook"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/facebook"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edtEditActivityAge"
+        app:layout_constraintStart_toStartOf="@+id/edtEditActivityAge"
+        app:layout_constraintTop_toBottomOf="@+id/edtEditActivityAge" />
+
+    <EditText
+        android:id="@+id/edtEditActivityLineId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/line_id"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edtEditActivityFacebook"
+        app:layout_constraintStart_toStartOf="@+id/edtEditActivityFacebook"
+        app:layout_constraintTop_toBottomOf="@+id/edtEditActivityFacebook" />
+
+    <EditText
+        android:id="@+id/edtEditActivityInstagram"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/instrgram"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edtEditActivityLineId"
+        app:layout_constraintStart_toStartOf="@+id/edtEditActivityLineId"
+        app:layout_constraintTop_toBottomOf="@+id/edtEditActivityLineId" />
+
+    <Button
+        android:id="@+id/btnEditActivityEdit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/btn_edit"
+        app:layout_constraintEnd_toEndOf="@+id/edtEditActivityInstagram"
+        app:layout_constraintStart_toStartOf="@+id/edtEditActivityInstagram"
+        app:layout_constraintTop_toBottomOf="@+id/edtEditActivityInstagram" />
+
+    <EditText
+        android:id="@+id/edtEditActivityUserId"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/userid"
+        android:enabled="false"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
